@@ -108,7 +108,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\ExceptionUtility.cs" />
+    <Compile Include="App_Code\ExceptionUtility.cs" />
     <Compile Include="Pages\About Us.aspx.cs">
       <DependentUpon>About Us.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

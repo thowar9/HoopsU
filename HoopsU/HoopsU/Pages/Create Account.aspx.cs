@@ -16,7 +16,7 @@ namespace HoopsU
 
         protected void Submit_Click(object sender, EventArgs e)
         {
-
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Account created!')", true);
         }
     }
 }

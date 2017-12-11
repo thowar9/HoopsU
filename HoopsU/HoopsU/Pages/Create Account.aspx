@@ -221,7 +221,7 @@
             </tr>
         </table>
     </asp:Panel>
-    
+    <br />
     <asp:Panel style="clear:both" ID="password" runat="server" GroupingText="Your Password" Width="800px">
         <table>
             <tr>

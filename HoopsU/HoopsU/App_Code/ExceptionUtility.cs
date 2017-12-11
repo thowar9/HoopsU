@@ -13,7 +13,7 @@ namespace HoopsU.App_Code
         //log an exception 
         public static void LogException(Exception exc, string source)
         {
-            string logFile = "~/App_Data/ErrorLog.txt";
+            string logFile = "/App_Data/ErrorLog.txt";
             logFile = HttpContext.Current.Server.MapPath(logFile);
 
             //open log file in append mode and write to the log
