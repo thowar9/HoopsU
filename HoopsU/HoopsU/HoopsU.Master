@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HoopsU.master.cs" Inherits="HoopsU.HoopsU" %>
+<%@ Register Src="~/Controls/Banner.ascx" TagName="Banner" TagPrefix="ucBan" %>
+<%@ Register Src="~/Controls/Footer.ascx" TagName="Footer" TagPrefix="ucFoo" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="TopContent">
+        <ucBan:Banner ID="Banner" runat="server" /> <!-- banner -->
+    </header>
+    <section style="background-color:black; height: 6px; width:100% "></section> <!--Black bar under banner -->
+    <nav class="PrimaryNavigation">
+        <ul>
+            <asp:SiteMapDataSource ID="siteMapData" runat="server" ShowStartingNode="false" />
+            <asp:Repeater ID="menu" runat="server" DataSourceID="siteMapData">
+                <ItemTemplate>
+                <li>
+                    <a href="<%# Eval("url") %>"><%# Eval("title") %></a>
+                </li>
+                </ItemTemplate>
+            </asp:Repeater>
+        </ul>
+    </nav>	
+    <br /> <!-- line break to separate page content from navigation bar -->
+    <br />
+    <section style="background-color:black; height: 6px; width:100% "></section> <!--Black bar under navigation -->
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <section style="background-color:black; height: 6px; width:100% "></section> <!--Black bar over footer -->
+    <header>
+        <ucFoo:Footer ID="Footer" runat="server" /> <!-- footer -->
+    </header>
+</body>
+</html>
