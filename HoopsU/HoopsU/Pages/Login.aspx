@@ -2,5 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <b>Login Test</b>
+    <b>Login Test</b> 
+    <br />
+    <a href="Create Account.aspx" style="text-decoration:none">Create Account</a>
 </asp:Content>

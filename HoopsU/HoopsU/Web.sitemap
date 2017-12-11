@@ -4,5 +4,6 @@
     <siteMapNode title="Courts" description="Courts" url="~/Pages/Courts.aspx" /> 
     <siteMapNode title="Favorites" description="Favorites" url="~/Pages/Favorites.aspx" />
     <siteMapNode title="Courts Near Me" description="Courts Near Me" url="~/Pages/Courts Near Me.aspx" />
+    <siteMapNode title="Log In" description="Log In" url="~/Pages/Login.aspx" />
    </siteMapNode>
 </siteMap>
