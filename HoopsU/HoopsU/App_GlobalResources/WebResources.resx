@@ -120,4 +120,8 @@
   <data name="LabelLanguage" xml:space="preserve">
     <value>Languages:</value>
   </data>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>Welcome to HoopsU, your hub for pickup basketball! Click one of the navigation buttons above to get started. 
+We can connect you to places to play near you!</value>
+  </data>
 </root>

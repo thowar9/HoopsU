@@ -2,6 +2,19 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script type="text/javascript">
+            var c_value = document.cookie;
+            var c_start = c_value.indexOf("userName=");
+            if (c_start != -1) {
+                c_start = c_value.indexOf("=", c_start) + 1;
+                var c_end = c_value.indexOf(";", c_start);
+                if (c_end == -1) {
+                    c_end = c_value.length;
+                }
+                c_value = unescape(c_value.substring(c_start, c_end));
+                alert(c_value)
+            }
+        </script>
     <asp:Panel ID="skills" runat="server" GroupingText="Rate your own skills!" Width="600px" style="font-size:18px">
         <table>
             <tr><asp:Label ID="lblHelp" runat="server" Text="1 is the lowest, 5 is the highest." /></tr>

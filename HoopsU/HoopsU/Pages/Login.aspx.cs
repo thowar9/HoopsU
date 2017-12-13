@@ -17,6 +17,7 @@ namespace HoopsU
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            userInfo.Visible = false; 
             log4net.Config.XmlConfigurator.Configure(); 
             try
             {
@@ -45,7 +46,25 @@ namespace HoopsU
 
         protected void butLogin_Click(object sender, EventArgs e)
         {
-            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Login unsuccessful. Try again.')", true);
+            LoginBox.Visible = false;
+            userInfo.Visible = true;
+            userInfo.Enabled = false; 
+
+            using (HoopsUDBEntities entities = new HoopsUDBEntities())
+            { 
+                var user = from s in entities.tblUsers
+                           where s.fldUsername == txtUsername.Text && s.fldUserPassword == txtPassword.Text
+                           select s; 
+                if (user != null)
+                {
+                    detailsViewUserInfo.DataSource = user.ToList();
+                    detailsViewUserInfo.DataBind(); 
+                }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Login unsuccessful.')", true);
+                }
+            }
         }
     }
 }

@@ -2,5 +2,5 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <b>Favorite Courts Test</b>
+    <asp:textbox ID="txtFavoriteCourts" runat="server" TextMode="MultiLine" Enabled="false"/>
 </asp:Content>

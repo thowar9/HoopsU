@@ -11,7 +11,11 @@ namespace HoopsU
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            using (HoopsUDBEntities entities = new HoopsUDBEntities())
+            {   //SPROC BELOW
+                grdCourts.DataSource = entities.sprGetAllCourts();
+                grdCourts.DataBind(); 
+            }
         }
     }
 }

@@ -68,5 +68,15 @@ namespace Resources {
                 return ResourceManager.GetString("LabelLanguage", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Welcome to HoopsU, your hub for pickup basketball! Click one of the navigation buttons above to get started. 
+        ///We can connect you to places to play near you!.
+        /// </summary>
+        internal static string WelcomeMessage {
+            get {
+                return ResourceManager.GetString("WelcomeMessage", resourceCulture);
+            }
+        }
     }
 }

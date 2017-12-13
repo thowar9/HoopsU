@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HoopsUDBModelStoreContainer" CdmEntityContainer="HoopsUDBEntities">
+    <EntitySetMapping Name="tblCourts">
+      <EntityTypeMapping TypeName="HoopsUDBModel.tblCourt">
+        <MappingFragment StoreEntitySet="tblCourt">
+          <ScalarProperty Name="fldCourtID" ColumnName="fldCourtID" />
+          <ScalarProperty Name="fldCourtName" ColumnName="fldCourtName" />
+          <ScalarProperty Name="fldCourtCapacity" ColumnName="fldCourtCapacity" />
+          <ScalarProperty Name="fldCourtFullSize" ColumnName="fldCourtFullSize" />
+          <ScalarProperty Name="fldCourtAddress" ColumnName="fldCourtAddress" />
+          <ScalarProperty Name="fldCourtParkingAvailable" ColumnName="fldCourtParkingAvailable" />
+          <ScalarProperty Name="fldCourtZone" ColumnName="fldCourtZone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblFavorites">
+      <EntityTypeMapping TypeName="HoopsUDBModel.tblFavorite">
+        <MappingFragment StoreEntitySet="tblFavorites">
+          <ScalarProperty Name="fldFavoriteID" ColumnName="fldFavoriteID" />
+          <ScalarProperty Name="fldUser_ID" ColumnName="fldUser_ID" />
+          <ScalarProperty Name="fldCourt_ID" ColumnName="fldCourt_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblUsers">
+      <EntityTypeMapping TypeName="HoopsUDBModel.tblUser">
+        <MappingFragment StoreEntitySet="tblUser">
+          <ScalarProperty Name="fldUserID" ColumnName="fldUserID" />
+          <ScalarProperty Name="fldUsername" ColumnName="fldUsername" />
+          <ScalarProperty Name="fldUserPassword" ColumnName="fldUserPassword" />
+          <ScalarProperty Name="fldUserFirstName" ColumnName="fldUserFirstName" />
+          <ScalarProperty Name="fldUserLastName" ColumnName="fldUserLastName" />
+          <ScalarProperty Name="fldUserGender" ColumnName="fldUserGender" />
+          <ScalarProperty Name="fldUserAddress" ColumnName="fldUserAddress" />
+          <ScalarProperty Name="fldUserEmailAddress" ColumnName="fldUserEmailAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sprAddUser" FunctionName="HoopsUDBModel.Store.sprAddUser" />
+    <FunctionImportMapping FunctionImportName="sprGetAllCourts" FunctionName="HoopsUDBModel.Store.sprGetAllCourts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HoopsUDBModel.sprGetAllCourts_Result">
+          <ScalarProperty Name="fldCourtID" ColumnName="fldCourtID" />
+          <ScalarProperty Name="fldCourtName" ColumnName="fldCourtName" />
+          <ScalarProperty Name="fldCourtCapacity" ColumnName="fldCourtCapacity" />
+          <ScalarProperty Name="fldCourtFullSize" ColumnName="fldCourtFullSize" />
+          <ScalarProperty Name="fldCourtAddress" ColumnName="fldCourtAddress" />
+          <ScalarProperty Name="fldCourtParkingAvailable" ColumnName="fldCourtParkingAvailable" />
+          <ScalarProperty Name="fldCourtZone" ColumnName="fldCourtZone" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprGetCourtsByZone" FunctionName="HoopsUDBModel.Store.sprGetCourtsByZone">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="HoopsUDBModel.sprGetCourtsByZone_Result">
+          <ScalarProperty Name="fldCourtID" ColumnName="fldCourtID" />
+          <ScalarProperty Name="fldCourtName" ColumnName="fldCourtName" />
+          <ScalarProperty Name="fldCourtCapacity" ColumnName="fldCourtCapacity" />
+          <ScalarProperty Name="fldCourtFullSize" ColumnName="fldCourtFullSize" />
+          <ScalarProperty Name="fldCourtAddress" ColumnName="fldCourtAddress" />
+          <ScalarProperty Name="fldCourtParkingAvailable" ColumnName="fldCourtParkingAvailable" />
+          <ScalarProperty Name="fldCourtZone" ColumnName="fldCourtZone" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sprGetFavoritesByUsername" FunctionName="HoopsUDBModel.Store.sprGetFavoritesByUsername" />
+  </EntityContainerMapping>
+</Mapping>

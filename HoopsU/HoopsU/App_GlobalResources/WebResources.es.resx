@@ -120,4 +120,8 @@
   <data name="LabelLanguage" xml:space="preserve">
     <value>Idiomas:</value>
   </data>
+  <data name="WelcomeMessage" xml:space="preserve">
+    <value>¡Bienvenido a HoopsU, tu centro para el baloncesto de recolección! Haga clic en uno de los botones de navegación de arriba para comenzar.
+¡Podemos conectarte a lugares para jugar cerca de ti!</value>
+  </data>
 </root>

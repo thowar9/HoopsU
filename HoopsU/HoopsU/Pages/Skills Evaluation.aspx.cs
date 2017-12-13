@@ -25,6 +25,11 @@ namespace HoopsU
 
         protected void butSubmitSkills_Click(object sender, EventArgs e)
         {
+            txtSkillDribbling.Enabled = false;
+            txtSkillPassing.Enabled = false;
+            txtSkillShooting.Enabled = false;
+            txtSkillBestMove.Enabled = false; 
+
             skillPanel.Visible = true; 
             Skills data = new Skills(); //accept data from forms into data object
             data.dribbling = Convert.ToInt32(drpDribbling.SelectedValue);
@@ -33,9 +38,18 @@ namespace HoopsU
             data.bestMove = txtBestMove.Text;
 
             string output = new JavaScriptSerializer().Serialize(data); //converts to JSON
-            
-            //parse input 
-            //set text boxes 
+            // output is now in JSON
+
+            Response.Cookies["userName"].Value = output;
+            Response.Cookies["userName"].Expires = DateTime.Now.AddDays(1);
+
+            Skills outData = new Skills(); //Parse JSON to skills object
+
+            outData = new JavaScriptSerializer().Deserialize<Skills>(output);
+            txtSkillDribbling.Text = Convert.ToString(outData.dribbling);
+            txtSkillShooting.Text = Convert.ToString(outData.shooting);
+            txtSkillPassing.Text = Convert.ToString(outData.passing);
+            txtSkillBestMove.Text = outData.bestMove; 
         }
     }
 }

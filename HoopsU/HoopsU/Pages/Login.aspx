@@ -23,4 +23,10 @@
             </tr>
         </table>
     </asp:Panel>
+    <asp:Panel ID="userInfo" runat="server" GroupingText = "Your User Info">
+        <asp:detailsview ID="detailsViewUserInfo" runat="server">
+
+        </asp:detailsview>
+    </asp:Panel>
+    <br />
 </asp:Content>

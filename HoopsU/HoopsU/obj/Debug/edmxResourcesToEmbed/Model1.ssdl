@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HoopsUDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblCourt">
+    <Key>
+      <PropertyRef Name="fldCourtID" />
+    </Key>
+    <Property Name="fldCourtID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fldCourtName" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="fldCourtCapacity" Type="int" Nullable="false" />
+    <Property Name="fldCourtFullSize" Type="bit" Nullable="false" />
+    <Property Name="fldCourtAddress" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="fldCourtParkingAvailable" Type="bit" Nullable="false" />
+    <Property Name="fldCourtZone" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblFavorites">
+    <Key>
+      <PropertyRef Name="fldFavoriteID" />
+    </Key>
+    <Property Name="fldFavoriteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fldUser_ID" Type="int" Nullable="false" />
+    <Property Name="fldCourt_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="fldUserID" />
+    </Key>
+    <Property Name="fldUserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fldUsername" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="fldUserPassword" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="fldUserFirstName" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="fldUserLastName" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="fldUserGender" Type="bit" Nullable="false" />
+    <Property Name="fldUserAddress" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="fldUserEmailAddress" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__tblFavori__fldCo__286302EC">
+    <End Role="tblCourt" Type="Self.tblCourt" Multiplicity="1" />
+    <End Role="tblFavorites" Type="Self.tblFavorites" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCourt">
+        <PropertyRef Name="fldCourtID" />
+      </Principal>
+      <Dependent Role="tblFavorites">
+        <PropertyRef Name="fldCourt_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblFavori__fldUs__276EDEB3">
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="1" />
+    <End Role="tblFavorites" Type="Self.tblFavorites" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="fldUserID" />
+      </Principal>
+      <Dependent Role="tblFavorites">
+        <PropertyRef Name="fldUser_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="sprAddUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fldUsername" Type="nvarchar" Mode="In" />
+    <Parameter Name="fldUserPassword" Type="nvarchar" Mode="In" />
+    <Parameter Name="fldUserFirstName" Type="nvarchar" Mode="In" />
+    <Parameter Name="fldUserLastName" Type="nvarchar" Mode="In" />
+    <Parameter Name="fldUserGender" Type="bit" Mode="In" />
+    <Parameter Name="fldUserAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="fldUserEmailAddress" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sprGetAllCourts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sprGetCourtsByZone" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fldCourtZone" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sprGetFavoritesByUsername" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fldUsername" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="HoopsUDBModelStoreContainer">
+    <EntitySet Name="tblCourt" EntityType="Self.tblCourt" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblFavorites" EntityType="Self.tblFavorites" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblUser" EntityType="Self.tblUser" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__tblFavori__fldCo__286302EC" Association="Self.FK__tblFavori__fldCo__286302EC">
+      <End Role="tblCourt" EntitySet="tblCourt" />
+      <End Role="tblFavorites" EntitySet="tblFavorites" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblFavori__fldUs__276EDEB3" Association="Self.FK__tblFavori__fldUs__276EDEB3">
+      <End Role="tblUser" EntitySet="tblUser" />
+      <End Role="tblFavorites" EntitySet="tblFavorites" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

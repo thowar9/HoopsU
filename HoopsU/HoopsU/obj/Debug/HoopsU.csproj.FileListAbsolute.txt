@@ -156,3 +156,7 @@ C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\obj\Debug\HoopsU.csprojRes
 C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\obj\Debug\HoopsU.csproj.CoreCompileInputs.cache
 C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\obj\Debug\HoopsU.dll
 C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\obj\Debug\HoopsU.pdb
+C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\bin\EntityFramework.dll
+C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\bin\EntityFramework.SqlServer.dll
+C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\bin\EntityFramework.xml
+C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\bin\EntityFramework.SqlServer.xml

@@ -7,6 +7,9 @@
 <a href="Skills Evaluation.aspx" style="font-weight:bold";>
     Evaluate your skills!
 </a>
+<a>&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+<a href="Contact Us.aspx" style="font-weight:bold">Contact Us</a>
+<br />
 <a>
     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp

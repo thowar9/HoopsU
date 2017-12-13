@@ -225,9 +225,22 @@
     <asp:Panel style="clear:both" ID="password" runat="server" GroupingText="Your Password" Width="800px">
         <table>
             <tr>
+                <td><asp:Label ID="lblUsername" runat="server" text="Username: " /></td>
+                <td><asp:TextBox ID="txtUsername" runat="server" />
+                    <div style="float:right; color:red">*</div>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="valReqUsername" runat="server"
+                        ControlToValidate="txtUsername" 
+                        ErrorMessage="You must enter a username."
+                        Display="Dynamic" 
+                        ForeColor="Red" /> 
+                </td>
+            </tr>
+            <tr>
                 <td><asp:Label ID="lblPassword" style="color:black" runat="server" text="Password: " /></td>
                 <td><asp:TextBox ID="txtPassword" TextMode="Password" runat="server" />
-                     <div style="float:right; color:red"">*</div>
+                     <div style="float:right; color:red">*</div>
                 </td>
                 <td>
                     <asp:RequiredFieldValidator ID="valReqPassword" runat="server"

@@ -93,3 +93,421 @@ File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\Popul
    at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
    at System.Data.DataSet.ReadXml(String fileName)
    at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Header]\r\n2017-12-11 21:56:59,928 [5] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Footer]\r\n[Header]\r\n2017-12-11 21:57:04,707 [8] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Header]\r\n2017-12-11 21:59:43,264 [7] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Header]\r\n2017-12-12 11:52:07,712 [7] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Header]\r\n2017-12-12 17:20:50,465 [7] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Header]\r\n2017-12-12 21:13:08,074 [7] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Footer]\r\n[Header]\r\n2017-12-12 21:13:12,414 [7] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Footer]\r\n[Header]\r\n2017-12-12 21:13:15,643 [7] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Header]\r\n2017-12-12 23:22:44,131 [8] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Header]\r\n2017-12-12 23:30:50,508 [6] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Header]\r\n2017-12-13 00:42:44,090 [9] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Header]\r\n2017-12-13 00:54:23,095 [7] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 24
+[Header]\r\n2017-12-13 01:32:57,945 [5] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 25
+[Header]\r\n2017-12-13 01:34:02,116 [9] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 25
+[Footer]\r\n[Header]\r\n2017-12-13 01:34:04,793 [8] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 25
+[Header]\r\n2017-12-13 01:35:33,600 [6] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 25
+[Footer]\r\n[Header]\r\n2017-12-13 01:35:41,671 [9] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 25
+[Footer]\r\n[Header]\r\n2017-12-13 01:35:43,884 [9] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 25
+[Footer]\r\n[Header]\r\n2017-12-13 01:35:49,486 [9] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 25
+[Footer]\r\n[Header]\r\n2017-12-13 01:35:56,425 [9] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 25
+[Footer]\r\n[Header]\r\n2017-12-13 01:36:22,352 [8] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 25
+[Footer]\r\n[Header]\r\n2017-12-13 01:36:29,427 [13] ERROR HoopsU.Login Login Population Error
+System.IO.FileNotFoundException: Could not find file 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'.
+File name: 'C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\App_Data\PopulatePageDummy.xml'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   at System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   at System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   at System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   at System.Threading.CompressedStack.runTryCode(Object userData)
+   at System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   at System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   at System.Xml.XmlTextReaderImpl.OpenUrl()
+   at System.Xml.XmlTextReaderImpl.Read()
+   at System.Xml.XmlTextReader.Read()
+   at System.Xml.XmlReader.MoveToContent()
+   at System.Data.DataSet.ReadXml(XmlReader reader, Boolean denyResolving)
+   at System.Data.DataSet.ReadXml(String fileName)
+   at HoopsU.Login.Page_Load(Object sender, EventArgs e) in C:\Users\Tucker\Documents\GitHub\HoopsU\HoopsU\HoopsU\Pages\Login.aspx.cs:line 25

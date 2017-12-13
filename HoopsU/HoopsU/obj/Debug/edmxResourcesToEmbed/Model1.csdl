@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HoopsUDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblCourt">
+    <Key>
+      <PropertyRef Name="fldCourtID" />
+    </Key>
+    <Property Name="fldCourtID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fldCourtName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fldCourtCapacity" Type="Int32" Nullable="false" />
+    <Property Name="fldCourtFullSize" Type="Boolean" Nullable="false" />
+    <Property Name="fldCourtAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fldCourtParkingAvailable" Type="Boolean" Nullable="false" />
+    <Property Name="fldCourtZone" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="tblFavorites" Relationship="Self.FK__tblFavori__fldCo__286302EC" FromRole="tblCourt" ToRole="tblFavorites" />
+  </EntityType>
+  <EntityType Name="tblFavorite">
+    <Key>
+      <PropertyRef Name="fldFavoriteID" />
+    </Key>
+    <Property Name="fldFavoriteID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fldUser_ID" Type="Int32" Nullable="false" />
+    <Property Name="fldCourt_ID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tblCourt" Relationship="Self.FK__tblFavori__fldCo__286302EC" FromRole="tblFavorites" ToRole="tblCourt" />
+    <NavigationProperty Name="tblUser" Relationship="Self.FK__tblFavori__fldUs__276EDEB3" FromRole="tblFavorites" ToRole="tblUser" />
+  </EntityType>
+  <EntityType Name="tblUser">
+    <Key>
+      <PropertyRef Name="fldUserID" />
+    </Key>
+    <Property Name="fldUserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fldUsername" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fldUserPassword" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fldUserFirstName" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fldUserLastName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fldUserGender" Type="Boolean" Nullable="false" />
+    <Property Name="fldUserAddress" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fldUserEmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="tblFavorites" Relationship="Self.FK__tblFavori__fldUs__276EDEB3" FromRole="tblUser" ToRole="tblFavorites" />
+  </EntityType>
+  <Association Name="FK__tblFavori__fldCo__286302EC">
+    <End Role="tblCourt" Type="Self.tblCourt" Multiplicity="1" />
+    <End Role="tblFavorites" Type="Self.tblFavorite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblCourt">
+        <PropertyRef Name="fldCourtID" />
+      </Principal>
+      <Dependent Role="tblFavorites">
+        <PropertyRef Name="fldCourt_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tblFavori__fldUs__276EDEB3">
+    <End Role="tblUser" Type="Self.tblUser" Multiplicity="1" />
+    <End Role="tblFavorites" Type="Self.tblFavorite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblUser">
+        <PropertyRef Name="fldUserID" />
+      </Principal>
+      <Dependent Role="tblFavorites">
+        <PropertyRef Name="fldUser_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HoopsUDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblCourts" EntityType="Self.tblCourt" />
+    <EntitySet Name="tblFavorites" EntityType="Self.tblFavorite" />
+    <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
+    <AssociationSet Name="FK__tblFavori__fldCo__286302EC" Association="Self.FK__tblFavori__fldCo__286302EC">
+      <End Role="tblCourt" EntitySet="tblCourts" />
+      <End Role="tblFavorites" EntitySet="tblFavorites" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tblFavori__fldUs__276EDEB3" Association="Self.FK__tblFavori__fldUs__276EDEB3">
+      <End Role="tblUser" EntitySet="tblUsers" />
+      <End Role="tblFavorites" EntitySet="tblFavorites" />
+    </AssociationSet>
+    <FunctionImport Name="sprAddUser">
+      <Parameter Name="fldUsername" Mode="In" Type="String" />
+      <Parameter Name="fldUserPassword" Mode="In" Type="String" />
+      <Parameter Name="fldUserFirstName" Mode="In" Type="String" />
+      <Parameter Name="fldUserLastName" Mode="In" Type="String" />
+      <Parameter Name="fldUserGender" Mode="In" Type="Boolean" />
+      <Parameter Name="fldUserAddress" Mode="In" Type="String" />
+      <Parameter Name="fldUserEmailAddress" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sprGetAllCourts" ReturnType="Collection(HoopsUDBModel.sprGetAllCourts_Result)" />
+    <FunctionImport Name="sprGetCourtsByZone" ReturnType="Collection(HoopsUDBModel.sprGetCourtsByZone_Result)">
+      <Parameter Name="fldCourtZone" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sprGetFavoritesByUsername" ReturnType="Collection(String)">
+      <Parameter Name="fldUsername" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sprGetAllCourts_Result">
+    <Property Type="Int32" Name="fldCourtID" Nullable="false" />
+    <Property Type="String" Name="fldCourtName" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="fldCourtCapacity" Nullable="false" />
+    <Property Type="Boolean" Name="fldCourtFullSize" Nullable="false" />
+    <Property Type="String" Name="fldCourtAddress" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="fldCourtParkingAvailable" Nullable="false" />
+    <Property Type="String" Name="fldCourtZone" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="sprGetCourtsByZone_Result">
+    <Property Type="Int32" Name="fldCourtID" Nullable="false" />
+    <Property Type="String" Name="fldCourtName" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="fldCourtCapacity" Nullable="false" />
+    <Property Type="Boolean" Name="fldCourtFullSize" Nullable="false" />
+    <Property Type="String" Name="fldCourtAddress" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="fldCourtParkingAvailable" Nullable="false" />
+    <Property Type="String" Name="fldCourtZone" Nullable="false" MaxLength="30" />
+  </ComplexType>
+</Schema>
