@@ -137,9 +137,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controls\Banner.ascx" />
-    <Content Include="Controls\Courts.ascx" />
-    <Content Include="Controls\Login.ascx" />
-    <Content Include="Controls\Map.ascx" />
     <Content Include="Pages\Courts Near Me.aspx" />
     <Content Include="Pages\Courts.aspx" />
     <Content Include="Pages\Default.aspx" />
@@ -204,13 +201,6 @@
     <Compile Include="Controls\Banner.ascx.designer.cs">
       <DependentUpon>Banner.ascx</DependentUpon>
     </Compile>
-    <Compile Include="Controls\Courts.ascx.cs">
-      <DependentUpon>Courts.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Courts.ascx.designer.cs">
-      <DependentUpon>Courts.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Controls\Footer.ascx.cs">
       <DependentUpon>Footer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -224,20 +214,6 @@
     </Compile>
     <Compile Include="Controls\Language.ascx.designer.cs">
       <DependentUpon>Language.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Login.ascx.cs">
-      <DependentUpon>Login.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Login.ascx.designer.cs">
-      <DependentUpon>Login.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\Map.ascx.cs">
-      <DependentUpon>Map.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\Map.ascx.designer.cs">
-      <DependentUpon>Map.ascx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Create Account.aspx.cs">
       <DependentUpon>Create Account.aspx</DependentUpon>

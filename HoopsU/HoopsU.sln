@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoopsU", "HoopsU\HoopsU.csproj", "{0D202357-B0D1-4CF4-A129-B845F5C67785}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HUWS", "HUWS\HUWS.csproj", "{0F0D6B4C-3BC1-494A-B490-37A2EAF14707}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{0D202357-B0D1-4CF4-A129-B845F5C67785}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D202357-B0D1-4CF4-A129-B845F5C67785}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D202357-B0D1-4CF4-A129-B845F5C67785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0D6B4C-3BC1-494A-B490-37A2EAF14707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0D6B4C-3BC1-494A-B490-37A2EAF14707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0D6B4C-3BC1-494A-B490-37A2EAF14707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0D6B4C-3BC1-494A-B490-37A2EAF14707}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27FD76FB-03E1-4FA7-A719-F70C457A766F}
 	EndGlobalSection
 EndGlobal

@@ -26,7 +26,7 @@ namespace HoopsU
             for (int i = 0; i < 18; i++)
             {
                 double x = Convert.ToDouble(i);
-                double y = x * x;
+                double y = .75 * x * x * x;
                 list1.Add(x, y);
             }
             //Use a LineItem type chart came from the ZedGraph DLL
